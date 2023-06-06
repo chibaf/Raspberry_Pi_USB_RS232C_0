@@ -9,5 +9,5 @@ ser = serial.Serial(dev, rate, timeout=10)
 ser.write(b'\x0101')    # send commands
 
 res = ser.readline()    # recieve commans
-res = res.encode()    # encode
+#res = res.encode('utf-8')    # encode
 print(res)
